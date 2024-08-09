@@ -3,8 +3,8 @@ package main;
 public class teste {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		AppClinica app = new AppClinica();
+		app.menu();
 	}
 
 }

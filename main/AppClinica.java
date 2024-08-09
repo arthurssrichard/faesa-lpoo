@@ -10,25 +10,29 @@ public class AppClinica {
 	
 	public void menu(){
 		System.out.println("Bem vindo à Clínica. Veja o menu:");
-		System.out.println("1 - Cadastrar"
-				+ "2 - Consultar"
-				+ "3 - Imprimir Cadastro"
-				+ "4 - Sair");
-		int option = sc.nextInt();
-		
-		switch(option) {
-		case 1:
-			this.cadastrar();
-			break;
-		case 2:
-			this.consultar();
-			break;
-		case 3:
-			this.imprimirCadastro();
-		case 4:
-			System.out.println("Encerrando sistema...");
-			sc.close();
-		
+		boolean continuar = true;
+		while(continuar){
+
+			System.out.println("1 - Cadastrar"
+			+ "\n2 - Consultar"
+			+ "\n3 - Imprimir Cadastro"
+			+ "\n4 - Sair");
+			int option = sc.nextInt();
+			
+			switch(option) {
+				case 1:
+				this.cadastrar();
+				break;
+				case 2:
+				this.consultar();
+				break;
+				case 3:
+				this.imprimirCadastro();
+				case 4:
+				System.out.println("Encerrando sistema...");
+				sc.close();
+				
+			}
 		}
 	}
 	
@@ -48,6 +52,7 @@ public class AppClinica {
 		
 		Paciente novoPaciente = new Paciente(nome, cpf, dataNascimento, historico);
 		vetor.insere(novoPaciente);
+		System.out.println("\nUsuário cadastrado com sucesso!\n");
 	}
 	
 	public void consultar() {
@@ -58,7 +63,7 @@ public class AppClinica {
 	}
 	
 	private void tuplaPaciente(Paciente paciente) {
-		System.out.println("Nome do paciente: "+ paciente.getNome() +"\n CPF: "+ paciente.getCPF() + "\n Data de nascimento: "+ paciente.getDataDeNascimento()+ "\n Histórico: "+ paciente.getHistorico());
+		System.out.println("Nome do paciente: "+ paciente.getNome() +"\nCPF: "+ paciente.getCPF() + "\nData de nascimento: "+ paciente.getDataDeNascimento()+ "\nHistórico: "+ paciente.getHistorico());
 	}
 	
 	public void imprimirCadastro() {
