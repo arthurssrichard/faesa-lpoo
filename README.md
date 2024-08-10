@@ -1,5 +1,5 @@
 # faesa-lpoo  
-## Versão simples sem muito polimneto de uma avaliação diagnóstica da faculdade
+## Versão simples sem muito polimento de uma avaliação diagnóstica da faculdade
 ## Feito baseado nas orientações a seguir:
 
 Suponha que você queira fazer um aplicativo para uma clínica.
