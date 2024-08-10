@@ -13,7 +13,7 @@ public class VetPaciente {
 	}
 	public void debug(){
 		for(int i = 0; i < nElem; i++){
-			System.out.println(vet[i].toString() + "  "+ nElem);
+			System.out.println(vet[i].toString());
 		}
 	}
 

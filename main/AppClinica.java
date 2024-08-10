@@ -23,14 +23,19 @@ public class AppClinica {
 				case 1:
 				this.cadastrar();
 				break;
+
 				case 2:
 				this.consultar();
 				break;
+
 				case 3:
 				this.imprimirCadastro();
+				break;
+
 				case 4:
 				System.out.println("Encerrando sistema...");
 				sc.close();
+				System.exit(0);
 				
 			}
 		}
@@ -68,7 +73,7 @@ public class AppClinica {
 	
 	public void imprimirCadastro() {
 		System.out.println("Imprimindo dados de todos os pacientes:");
-		
+		vetor.debug();
 	}
 	
 	
