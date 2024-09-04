@@ -30,12 +30,31 @@ public class VetVendedor {
         }
     }
 
+	public void listarVendas(){
+		System.out.println("\nListando vendas");
+
+		for(int i = 0; i < 0; i++){
+			System.out.println("Total em vendas: " + lista.get(i).getTotalEmVendas() + " Vendedor: "+ lista.get(i).getNome());
+		}
+	}
+
+	public void removerVendedor(){
+		System.out.println("Digite o nome do vendedor que quer remover: ");
+		String entry = sc.next();
+
+		for(int i = 0; i < 3; i++){
+			if(lista.get(i).getNome() == entry){
+				lista.remove(lista.get(i));
+			}
+		}
+	}
+
 	@Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Lista de Vendedores:\n");
         for (Vendedor vendedor : lista) {
-            sb.append("Nome: "+vendedor.getNome() +"| Categoria: "+ vendedor.getCategoria()).append("\n");
+            sb.append("Nome: "+ vendedor.getNome() +"| Categoria: "+ vendedor.getCategoria()).append("\n");
         }
         return sb.toString();
     }
