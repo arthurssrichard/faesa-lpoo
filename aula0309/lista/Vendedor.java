@@ -63,7 +63,9 @@ public class Vendedor {
 		return salarioFinal;
 	}
 	
-	
+	public char getCategoria(){
+		return this.categoria;
+	}
 	
 	
 	public static double getSalarioBase() {
