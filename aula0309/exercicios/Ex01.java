@@ -13,9 +13,12 @@ public class Ex01 {
         lista.listar();
 
 		// 3 - Imprimir o total de todas as vendas na tela
+		lista.listarVendas();
 
 		// 4 - Pedir o nome de um vendedor e removê-lo da lista. 
-			
+		lista.removerVendedor();
+
+		lista.listar();
 	}
 
 }
