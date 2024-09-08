@@ -8,7 +8,8 @@ public class Ex01 {
 		lista.preencher();
 		
 		// 1 - Mostre na tela os vendedores com maior tempo de serviço
-		
+		lista.listarTempoServico();
+
 		// 2 - Moste na tela o nome e a categoria de todos os vendedores
         lista.listar();
 
