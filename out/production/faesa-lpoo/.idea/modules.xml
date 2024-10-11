@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/faesa-lpoo.iml" filepath="$PROJECT_DIR$/faesa-lpoo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faesa-lpoo2.iml" filepath="$PROJECT_DIR$/faesa-lpoo2.iml" />
+    </modules>
+  </component>
+</project>
